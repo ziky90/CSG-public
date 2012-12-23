@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/companies_name"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="@color/orange_yellow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    />
+    
+    <TextView android:id="@+id/companies_price_per_km_desc"
+    android:text="@string/price_per_km" 
+    android:textSize="18sp"
+    android:textColor="@color/dark_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/companies_name"
+    android:paddingTop="2dp"
+    android:paddingLeft="8dp"
+    />
+    
+    <TextView android:id="@+id/companies_price_per_km"
+    android:textSize="18sp"
+    android:textColor="@color/orange_yellow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/companies_name"
+    android:layout_toRightOf="@id/companies_price_per_km_desc"
+    android:paddingTop="2dp"
+    android:paddingLeft="3dp"
+    android:textStyle="bold"/>
+    
+    <TextView android:id="@+id/companies_price_per_km_currency"
+    android:textSize="18sp"
+    android:textColor="@color/orange_yellow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/companies_name"
+    android:layout_toRightOf="@id/companies_price_per_km"
+    android:paddingTop="2dp"
+    android:paddingLeft="3dp"
+    android:textStyle="bold"
+    android:text="@string/czk"
+    />
+    
+    
+    <TextView android:id="@+id/entering_price_desc"
+    android:textSize="18sp"
+    android:textColor="@color/dark_gray"
+    android:text="@string/entering_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/companies_price_per_km_desc"
+    android:paddingTop="2dp"
+    android:paddingLeft="8dp"
+    />
+    
+    <TextView android:id="@+id/entering_price"
+    android:textSize="18sp"
+    android:textColor="@color/orange_yellow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/companies_price_per_km"
+    android:paddingTop="2dp"
+    android:paddingLeft="3dp"
+    android:layout_toRightOf="@id/entering_price_desc"
+    android:textStyle="bold"
+    />
+    
+    <TextView android:id="@+id/entering_price_currency"
+    android:textSize="18sp"
+    android:textColor="@color/orange_yellow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/companies_price_per_km"
+    android:paddingTop="2dp"
+    android:paddingLeft="3dp"
+    android:layout_toRightOf="@id/entering_price"
+    android:textStyle="bold"
+    android:text="@string/czk"
+    />
+    
+    <TextView android:id="@+id/waiting_price_desc"
+    android:textSize="18sp"
+    android:textColor="@color/dark_gray"
+    android:text="@string/waiting_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/entering_price_desc"
+    android:paddingTop="2dp"
+    android:paddingLeft="8dp"
+    />
+    
+    <TextView android:id="@+id/waiting_price"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@color/orange_yellow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/entering_price"
+    android:layout_toRightOf="@id/waiting_price_desc"
+    android:paddingTop="2dp"
+    android:paddingLeft="3dp"
+    
+    />
+    
+    <TextView android:id="@+id/waiting_price_currency"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@color/orange_yellow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/entering_price"
+    android:layout_toRightOf="@id/waiting_price"
+    android:paddingTop="2dp"
+    android:paddingLeft="3dp"
+    android:text="@string/czk"
+    />
+    
+    <ImageButton
+        	   android:layout_width="wrap_content"
+               android:id="@+id/phone_icon"
+    		   android:contentDescription="@string/descIcon"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:paddingRight="3dp"
+               android:layout_centerVertical="true"
+               android:src="@drawable/phone_button"
+               android:background="@android:color/transparent"
+               />
+
+</RelativeLayout>
